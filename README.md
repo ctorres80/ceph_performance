@@ -2,8 +2,13 @@
 
 ## Introduction 
 This ansible role can help you to automate benchmarking in ceph and collect some useful performance statistics.  
-Ceph admin keys or ceph keys that include "allow rwx pool=POOL_TO_TEST" is required on clients to create and delete rbd images, after completed the bechmarking remove the admin keys if not more required.  
-Hope this can help you, any comments are more than welcome please send me an email to carlos.torres.alayo@gmail.com  
+Ceph admin keys or ceph keys that include "allow rwx pool=POOL_TO_TEST" is required on clients to create and delete rbd images, after completed the bechmarking remove the admin keys if not more required.
+Hope this can help you, any comments are more than welcome please send me an email to carlos.torres.alayo@gmail.com 
+
+WARNING: An important requirement is ceph-common package, for example inin RHEL you can install based on your version by following the instructions available here: 
+
+https://access.redhat.com/documentation/en-us/red_hat_ceph_storage/4/html-single/installation_guide/index#using-the-command-line-interface-to-install-the-ceph-software
+
 
 ## What this playbook can do for you?
 The role will automate following workflow:
